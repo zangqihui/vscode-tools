@@ -1,0 +1,26 @@
+{
+  "name": "ftl-link",
+  "displayName": "FTL Link - FreeMarker 模板跳转",
+  "description": "FreeMarker (.ftl) 模板文件增强导航工具，支持以下功能：\n• static 资源路径跳转：从 href/src 中的 static/ 路径直接跳转到项目根目录对应的静态资源文件\n• #include 模板跳转：从 <#include> 指令跳转到被引用的 .ftl 模板文件\n• CSS 类名跳转：在 class=\"xxx\" 上 Ctrl+Click 跳转到 CSS 中 .xxx 选择器的定义位置，支持内联 <style>、外部 <link> CSS 文件，以及通过 <#include> 引用链查找入口文件中的样式定义\n• CSS 类名预览：鼠标悬停在类名上显示对应的 CSS 代码片段",
+  "version": "0.0.5",
+  "publisher": "ZangQiHui",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Programming Languages"],
+  "keywords": [
+    "freemarker",
+    "ftl",
+    "template",
+    "link",
+    "navigation",
+    "css",
+    "goto-definition"
+  ],
+  "activationEvents": [
+    "onLanguage:freemarker",
+    "onLanguage:html"
+  ],
+  "main": "./extension.js"
+}
